@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="UserProfiles" extends="Scene"> 
+<script type="text/brightscript" uri="mainScene.brs"/>
+<children>
+
+    <poster
+      id = "font"
+      visible = "true"
+      width = "1280"
+      height = "720"
+      uri = "pkg:/images/white.png" />
+
+    <layoutGroup
+      id = "layoutGroupFirst"
+      translation = "[640,100]"
+      layoutDirection = "vert"
+      vertAlignment = "top"
+      horizAlignment = "center"
+      itemSpacings = "[60]">
+
+      <SimpleLabel 
+        id ="titleLabel" 
+        visible = "true"
+        text = "Who is watching?"
+        color = "0x696969"
+        fontUri = "font:BoldSystemFontFile"
+        fontSize = "[40]"/>
+
+      <layoutGroup
+        id = "layoutGroupSecond"
+        layoutDirection = "horiz"
+        itemSpacings = "[1]">
+
+        <userInterface
+          id="user1"
+          visible="true"/>
+
+        <userInterface
+          id="user2"
+          visible="true"/>
+
+        <userInterface
+          id="user3"
+          visible="true"/>
+
+        <userInterface
+          id="user4"
+          visible="true"/>
+
+      </layoutGroup>
+
+    </layoutGroup>      
+      
+    </children>
+
+</component>

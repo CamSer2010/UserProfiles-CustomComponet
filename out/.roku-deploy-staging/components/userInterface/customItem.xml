@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="userInterface" extends="Group"> 
+
+<interface>
+
+    <field id = "translation" type = "array" alias = "rectangle.translation" value = "[0,0]" />
+    <field id = "color" type = "color" alias = "rectangle.color" value = "0xFFFFFF" />
+    <field id = "width" type = "integer" alias = "rectangle.width" value = "180" />
+    <field id = "height" type = "integer" alias = "rectangle.height" value = "180" />
+    <field id = "text" type = "string" alias = "label.text" value = "nameUser" />
+    <field id = "poster" type = "uri" alias = "poster.uri" value = "pkg:/images/userDefault.png" />
+
+</interface>
+
+<script type="text/brightscript" uri="customItem.brs"/>
+
+<children>
+
+<rectangle
+    id="rectangle"
+    visible ="true"/>
+
+<layoutGroup
+
+    id = "layoutGroup"
+    layoutDirection = "vert"
+    horizAlignment = "center"
+    itemSpacings = "[20]"
+    translation = "[90,0]">
+
+    <poster
+        id = "poster"
+        visible = "true"
+        opacity = "0.4"
+        width = "180"
+        height ="180"/>
+
+    <label 
+        id ="label" 
+        visible = "true"
+        opacity = "0.4"
+        color = "0x696969"
+        fontUri = "font:BoldSystemFontFile"
+        fontSize = "[25]"/>
+
+    <button
+        id = "button"
+        text = "EDIT"
+        height = "80"
+        visible = "false"
+        textFont = "font:MediumSystemFont"
+        iconUri = "pkg:/images/edit2.png"
+        maxWidth = "100"
+        width = "100"
+        focusedIconUri = "pkg:/images/edit2.png"
+        showFocusFootprint = "true"
+        textColor = "0x696969"/>
+
+    </layoutGroup>
+
+</children>
+
+</component>
